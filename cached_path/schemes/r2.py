@@ -4,7 +4,7 @@ Cloudflare R2.
 
 import io
 import os
-from functools import cache
+from functools import lru_cache as cache
 from typing import Optional
 
 import boto3.dynamodb

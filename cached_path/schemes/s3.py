@@ -3,7 +3,7 @@ AWS S3.
 """
 
 import io
-from functools import cache
+from functools import lru_cache as cache
 from typing import Optional, Tuple
 
 import boto3.session

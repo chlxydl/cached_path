@@ -3,7 +3,7 @@ Google Cloud Storage.
 """
 
 import io
-from functools import cache
+from functools import lru_cache as cache
 from typing import Optional, Tuple
 
 from google.api_core.exceptions import NotFound
